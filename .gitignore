@@ -1,0 +1,18 @@
+ # Confidential operational data - never commit
+   images/
+   data/
+   new_tickets/
+   *.xlsm
+   *.xlsx
+   !results/*.xlsx
+   *_results.csv
+
+   # Model weights - hosted on Hugging Face instead
+   qwen2vl-*/
+   checkpoint-*/
+   *.safetensors
+   *.bin
+
+   # Python / notebook clutter
+   __pycache__/
+   .ipynb_checkpoints/
