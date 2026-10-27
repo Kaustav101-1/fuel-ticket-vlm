@@ -1,0 +1,4 @@
+run,change,baseline_field_accuracy_pct,finetuned_field_accuracy_pct
+1,all 4-bit; 0.8 MP images,4.2,43.8
+2,image resolution 1.6 MP,4.9,43.0
+3,vision encoder full precision,47.4,88.4

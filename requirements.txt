@@ -1,0 +1,11 @@
+# Versions that worked on Google Colab (NVIDIA L4, CUDA 13.0, Python 3.13), Oct 2026
+transformers==4.49.0
+trl==0.15.2
+peft==0.14.0
+accelerate==1.4.0
+bitsandbytes>=0.46.1   # 0.50.2 used; older versions fail with transformers on newer CUDA
+datasets==3.3.2
+qwen-vl-utils
+openpyxl
+pandas
+pillow
