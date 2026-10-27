@@ -88,7 +88,7 @@ MAX_SIDE = 1600
 # The instruction shown to the model with every image. The SAME text is used at
 # inference time (step 3) — if you change it here, change it there too.
 PROMPT = (
-    "You are reading an Indian Oil Corporation aviation Fuel Delivery Voucher. "
+    "You are reading an aviation Fuel Delivery Voucher. "
     "Extract the following fields and reply with ONLY a JSON object using exactly these keys: "
     + ", ".join(FIELDS.values())
     + ". Rules: copy values as written on the voucher; dates as YYYY-MM-DD; times as HH:MM (24h); "

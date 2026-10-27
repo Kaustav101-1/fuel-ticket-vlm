@@ -1,6 +1,6 @@
 # Reading Handwritten Aviation Fuel Vouchers with a Fine-tuned Vision-Language Model
 
-An IIM Bangalore EPGP academic project. It fine-tunes an open-source vision-language model (**Qwen2-VL-7B-Instruct**) with **QLoRA** to read scanned, handwritten Indian Oil aviation Fuel Delivery Vouchers and return 24 fields as structured JSON, ready to append to Excel.
+An IIM Bangalore EPGP academic project. It fine-tunes an open-source vision-language model (**Qwen2-VL-7B-Instruct**) with **QLoRA** to read scanned, handwritten aviation Fuel Delivery Vouchers from an Indian airport fuelling station and return 24 fields as structured JSON, ready to append to Excel.
 
 **Result:** field accuracy on held-out tickets rose from **47.4%** (base model) to **88.4%** (fine-tuned), after one ~30-minute training run on a single Google Colab L4 GPU.
 
@@ -52,7 +52,7 @@ Three controlled runs. Each changed one thing.
 
 **Limitations**
 - **Test set:** 29 tickets, so each ticket moves a single field's score by ~3.4 points. Read per-field numbers as indicative. The overall figure rests on ~700 field checks.
-- **Coverage:** one station (Bagdogra), one airline, one aircraft type, Jan–Mar 2023. Other stations' handwriting is untested.
+- **Coverage:** one airport station, one airline, one aircraft type, Jan–Mar 2023. Other stations' handwriting is untested.
 - **Fuel batch number (10%):** long, cramped, with dozens of variants. It needs many more examples or validation against a list of known batches.
 
 ## Repository contents
